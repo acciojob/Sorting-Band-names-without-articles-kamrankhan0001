@@ -8,3 +8,10 @@ bandNames = bandNames.map(name => name.split(' ').filter(word => !articles.inclu
 
 // Sort band names in lexicographic order
 bandNames.sort();
+let html = '<ul id="band">';
+bandNames.forEach(name => {
+  html += `<li>${name}</li>`;
+});
+html += '</ul>';
+
+console.log(html);
